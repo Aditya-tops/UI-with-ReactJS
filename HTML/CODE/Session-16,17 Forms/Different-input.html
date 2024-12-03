@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different-input</title>
+</head>
+<body>
+    <form action="mail.py">
+        <fieldset>
+            <legend>My Form</legend>
+            <div>
+                <label for="uname">Username :-</label>
+                <input type="text" name="name" id="uname" >
+            </div><br>
+            <div>
+                <label for="email">Email :-</label>
+                <input type="email" name="email" id="email" value="@gmail.com" >
+            </div><br>
+            <div>
+                <label for="pwd">Password :-</label>
+                <input type="password" name="pwd" id="pwd" >
+            </div><br>
+            <div>
+                <label for="age">Age :-</label>
+                <input type="number" name="age" id="age" >
+            </div><br>
+            <div>
+                <label for="clr">Choose color :-</label>
+                <input type="color" name="color" id="clr" >
+            </div><br>
+            <div>
+                <label for="time">Tme :- </label>
+                <input type="time" name="time" id="time" >
+            
+                <label for="date">Choose Date :- </label>
+                <input type="date" name="date" id="date" >
+            </div><br>
+            <div>
+                <label for="date&timelocal">date & timelocal :-</label>
+                <input type="datetime-local" name="date&timelocal" id="date&timelocal" >
+            </div><br>
+            <div>
+                <label for="image">Upload Image :-</label>
+                <input type="file" name="image" id="image" >
+            </div><br>
+            <div>
+                <label for="month">Select Month :-</label>
+                <input type="month" name="month" id="month" >
+            </div><br>
+            <div>
+                <label for="week">Select Week :-</label>
+                <input type="week" name="week" id="week" >
+            </div><br>
+            <div>
+                <label for="range">Select range :-</label>
+                <input type="range" name="range" id="range" >
+            </div><br>
+            <div>
+                <label for="url">Select URL :-</label>
+                <input type="url" name="url" id="url" >
+            </div><br>
+            <div>
+                <label for="tel">Enter Phone Number :-</label>
+                <input type="tel" name="tel" id="tel" >
+            </div><br>
+
+            <div> 
+                <input type="hidden" name="secret" value="aditya" >
+            </div><br>
+        
+        <div> 
+            this is a type = :- button
+            <input type="button"  value="submit" > <br> <!-- submit button is user for only submit a form-->
+            this is a type = :- submit
+            <input type="button"  value="submit" >
+        </div><br>
+
+            <button>Submit</button>
+            <input type="reset"  value="reset" ><br><br>
+
+            <div>
+                <label for="search">Seach here :-</label>
+                <input type="search" name="search" id="search" >
+            </div><br>
+
+
+            <div>
+                <hr style="color: red;">
+            </div>
+            <h1>Form Day-2</Form></h1>
+            <br><br>
+            <div>
+                <p>The Earth is round</p>
+                <input type="radio" name="question" id="true">
+                <label for="true">True</label>                
+                <input type="radio" name="question" id="false">
+                <label for="false">False</label><br><br>
+
+            </div><br>
+            <div>
+                <!--Checkboxs are used when we need to select multiple elements/chices or if only one choice  -->
+                <label for="">Laguages Know :- </label>
+
+                <input type="checkbox" name="lang" id="en">
+                <label for="en">English</label>
+                <input type="checkbox" name="lang" id="hindi">
+                <label for="hindi">Hindi</label>                
+                <input type="checkbox" name="lang" id="gujarati">
+                <label for="gujarati">Gujarati</label>
+                <input type="checkbox" name="lang" id="marathi">
+                <label for="marathi">Marathi</label>
+                <input type="checkbox" name="lang" id="Telugu">
+                <label for="Telugu">Telugu</label>
+            </div><br><br>
+            <div>
+                <!-- Create choices for skills -->
+                <label for="">Choice your skills :- </label>
+                
+                <input type="checkbox" name="skills" id="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="skills" id="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="skills" id="js">
+                <label for="js">Java Script</label>
+                <input type="checkbox" name="skills" id="py">
+                <label for="py">Python</label>
+                <input type="checkbox" name="skills" id="reactjs">
+                <label for="reactjs">ReactJS</label>
+
+            </div><br><hr>
+            <h1>Form Day-3</Form></h1>
+            <br><br>
+            <div>
+                <!--Create a  DropDowns for SocialMedia-->
+                <label for="">Social Media:- &nbsp; </label>
+                <select name="" id="">
+                    <option value="insta">Instagram</option>
+                    <option value="fb">Facebook</option>
+                    <option value="wp">WhatsApp</option>
+                    <option value="snap">Snapchat</option>
+                    <option value="twitter">Twitter</option>
+                </select>
+            </div><br><br>
+        
+            <div>
+                <!-- Label for dropdown -->
+                <label for="branch">Select branch: </label>
+
+                <select name="branch" id="branch" >
+                    <optgroup label="Engineering">
+                        <option value="cse">CSE</option>
+                        <option value="eee">EEE</option>
+                        <option value="ec">EC</option>
+                        <option value="civil">CIVIL</option>
+                    </optgroup>
+                    <optgroup label="Degree">
+                        <option value="bsc">Bsc</option>
+                        <option value="Bcom">B Com</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                    </optgroup>
+                    <optgroup label="Post-Graduation">
+                        <option value="msc">Msc</option>
+                        <option value="mcom">M Com</option>
+                        <option value="mca">MCA</option>
+                    </optgroup>
+                </select>
+                
+            </div><br><hr><br>
+        
+        
+            <div>
+                <!--Create a  DropDowns for SocialMedia-->
+                <label for="">Social Media:- &nbsp; </label>
+        
+                <select name="" id="" multiple size="5">
+                    <optgroup label="Mostly use"></optgroup>
+                        <option value="insta">Instagram</option>
+                        <option value="fb">Facebook</option>
+                    </optgroup>
+                    <optgroup label="Lessuse"></optgroup>
+                        <option value="wp">WhatsApp</option>
+                        <option value="snap">Snapchat</option>
+                        <option value="twitter">Twitter</option>
+                    </optgroup>
+                </select>
+        
+            </div><br><br>
+            <div>
+                <label for="msg">Enter your feedback :- </label>
+                <textarea name="area" id="msg"></textarea>
+            </div><br><br>
+            <div>
+                <datalist id="ice-cream-flavors">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="mint">Mint</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="vanila">Vanila</option>
+                    <option value="coconut">Coconut</option>
+        
+                </datalist>
+            </div>
+            <div>
+                <input type="text" list="ice-cream-flavors" name="ice-cream-flavors" id="">
+            </div><br>
+
+
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
