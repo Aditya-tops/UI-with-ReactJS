@@ -1,0 +1,39 @@
+Bootstrap is a Component library which can be used for responsive user design
+Bootstrap current version is Bootstrap 5.
+To Understand Bootstrap Well, 
+you need to understand 3 concepts
+1. Bootstrap colors
+2. Bootstrap Break Points
+3. Bootstrap Components
+
+Get Started with Bootstrap:
+goto getBootstrap.com ---> docs-->get started/introduction
+
+copy cdn link of css and js and paste in your html page
+
+1. Bootstrap colors:
+Bootstrap uses 8 colors
+primary - blue
+seconadray- gray
+warning - 
+info -
+success - 
+danger -
+dark -
+light -
+you can overwrite these colors by defining your own css
+
+2. Layout: Bootstrap uses Grid Layout of 12 columns and we can deffine layputs with specific breakpoints
+
+Breakpoint	     Class infix	Dimensions
+Extra small	        None	    <576px
+Small	             sm     	≥576px
+Medium	             md	         ≥768px
+Large              	lg	          ≥992px
+Extra large	         xl      	≥1200px
+Extra extra large	xxl      	≥1400px
+
+Bootstrap follow Mobile First Design
+
+In bootstrap 1 point is 0.25 rem and 1 rem is body font size , by default font size:16px
+

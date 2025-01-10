@@ -1,0 +1,30 @@
+CSS
+--------------
+introduction
+Different types of CSS
+Basic Selectors(tag,class,id)
+BOX Model(border,border-radius,margin,padding),
+Background(images,colors,gradients),
+units
+Text
+fonts
+float,position,
+display,flex,grid
+advanced Selectors(pseudo classes,pseudo elements)
+animations and media queries
+variables,calculations
+
+Projects
+------------------
+landing pages
+portfolio
+invitation pages
+resume pages
+
+---> new ideas:
+       ---3d (flip book,models, text 3d)
+       --- search nice css library(animate css)
+       --- parallax effect
+       --- publish your own libraries
+       --- neomorphism, retro,code
+       --- mock / clone sites

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of local variable</title>
+</head>
+<body>
+    <script>
+        var y = 30; // this is global variable 
+
+        function abc() {
+            var x = 10;  //this is local variable
+            document.write("this value is in function = " + x);
+            document.write("<br>");
+            document.write("this value is outer function = " + y);
+        }
+        abc();
+        
+        // document.write("this value is in function = "+x);
+        document.write("<br>");
+        document.write("this value is outer function = " + y);
+    </script>
+</body>
+</html>

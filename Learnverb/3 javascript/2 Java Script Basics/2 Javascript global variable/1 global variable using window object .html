@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global variable</title>
+</head>
+<body>
+    <script>
+        var temp = "this is a temp variable ";
+
+        function abc(){
+            //var x = "this is a variable ";
+            window.x = "this is a variable "
+            document.write(window.x);
+            alert(temp);
+            alert(window.temp);
+        }
+        abc();
+
+        document.write("<br>");
+        document.write(window.x);
+
+        function def(){
+        document.write("<br>");
+        document.write(window.x);
+        }
+        def();
+    </script>
+</body>
+</html>

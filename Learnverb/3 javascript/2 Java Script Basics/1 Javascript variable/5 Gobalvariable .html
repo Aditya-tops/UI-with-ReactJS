@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Example of global variable</title>
+</head>
+<body>
+    <script>
+        var temp = 2000;
+
+        function a() {
+            document.write("<br>");
+            document.write("this value is  in side function A " + temp);
+            document.write("<br>");
+        }
+        function b() {
+            document.write("this value is  in side function B " + temp);
+            document.write("<br>");
+
+        }
+        document.write("this is a outer value of temp "+temp);
+
+
+        a();
+        b();
+
+    </script>
+</body>
+</html>

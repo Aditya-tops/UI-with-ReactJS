@@ -1,0 +1,38 @@
+/*this is hover*/
+
+.background-lightgreen{
+    background-color: lightgreen;
+    padding: 10px;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+.background-lightgreen:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+.anchor{
+    text-align: center;
+    font-size: 28px;
+    
+}
+.anchor:hover{
+    color: red;
+    text-align: center;
+    font-size: 28px;
+}
+.active a:active{
+    color: rgb(13, 181, 1);
+
+}
+.visit a:visited{
+    color: rgb(244, 0, 0);
+
+}
+p:lang(fr){
+    color: rgb(7, 138, 233);
+}
+input:focus{
+    border: 5px solid;
+}

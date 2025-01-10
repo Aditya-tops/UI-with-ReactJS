@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let and Count JS</title>
+</head>
+<body>
+    
+    <script>
+        var x = 100;
+        var y = 200;
+        var z = x + y;
+        document.write(z);
+        document.write("<br>");
+
+        {
+            let temp = "this is a temp variable";
+            document.write(temp);
+            document.write("<br>");
+            document.write(z);
+            document.write("<br>");
+
+
+        }
+        //document.write(temp);
+
+        const constant = "this is a  constant value";
+        document.write(constant);
+        //constant = "this is a  constant value is change";
+        // cont value is not change in future but let and var can change...
+        z = 700;
+
+        document.write("<br>");
+        document.write(z);
+
+
+    </script>
+
+</body>
+</html>

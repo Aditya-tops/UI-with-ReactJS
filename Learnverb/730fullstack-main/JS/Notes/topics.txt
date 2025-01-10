@@ -1,0 +1,42 @@
+JS
+--------
+Basic:
+-------
+introduction
+variables
+browser js engine,callstack,execution content,hoisting
+data types
+primitive
+non primitive(arrays,objects,functions)
+array method
+object method
+functions
+control statements
+loops
+
+DOM:
+------
+selection,updation,creation
+
+Advanced:
+----------
+ Async:
+-------
+  API
+  fetch,promises
+  callback hell, promise chaining
+  async await,error handling
+  axios
+  ajax(Asynchronous Javascript - timers,fetch,promises)
+Others
+------
+  classes
+  prototype inheritance
+  Higher order functions
+  ES6 fetaures
+  Modules
+  BOM
+  libraries
+
+Main Project
+

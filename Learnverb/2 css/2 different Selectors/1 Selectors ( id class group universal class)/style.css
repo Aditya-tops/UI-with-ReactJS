@@ -1,0 +1,28 @@
+p {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 32px;
+}
+
+#para{
+    color: rgb(139, 53, 53);
+    background-color: #23e1c7;
+    text-align: left;
+    font-weight: 800;
+}
+
+.right{
+    text-align: right;
+    color: rgb(0, 255, 55);
+    background-color: #3c25cf;
+}
+
+*{
+    background-color: #9286db;
+    font-style: italic;
+}
+
+h3,h4{
+    text-align: center;
+}

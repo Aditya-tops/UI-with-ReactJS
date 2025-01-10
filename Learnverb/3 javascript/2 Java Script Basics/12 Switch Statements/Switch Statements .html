@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statements</title>
+</head>
+<body>
+    <script>
+        var grade = "A";
+        document.write("<h2>Switch Statement</h2>")
+
+        switch(grade){
+            case 'A':
+                document.write("The student has secured A");
+                break;
+            case 'B':
+                document.write("The student has secured B");
+                break;
+            default:
+                document.write("The student has not secured grade");
+                break;
+        }
+        document.write("<hr>")
+    </script>
+    <script>
+        // WAP to display today "Day"
+        document.write(new Date().getDay());
+        document.write("<br>");
+        document.write(new Date().getDate());
+        document.write("<br>");
+
+
+        switch(new Date().getDay()){
+            case 1:
+                document.write("Its Monday");
+                break;
+            case 2:
+            document.write("Its Tuesday");
+                break;
+            case 3:
+            document.write("Its Wednesday");
+                break;
+            case 4:
+            document.write("Its Thuesday");
+                break;
+            case 5:
+                document.write("Its Friday");
+                break;
+            case 6:
+                document.write("Its Satuarday");
+                break;
+            case 7:
+                document.write("Its Sunday ");
+                break;
+            default:
+                document.write("Day is not valid");
+        }
+        document.write("<hr>")
+    </script>
+    <script>
+        //var x = "0";
+        var x = 0;
+
+        switch(x){
+            case 0:
+                document.write("off");
+                break;
+            case 1:
+                document.write("ON");
+                break;
+            default:
+            document.write("Invalid Input");
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For-In statement</title>
+  </head>
+  <body>
+    <script>
+      document.writeln("<h1>For IN Loop</h1>");
+
+      var person = {
+        firstname: "aditya",
+        lastname: "patel",
+        age: 25,
+        eyecolor: "blue",
+      };
+      var temp = "";
+      for (x in person) {
+        //document.writeln(person[x]);
+        temp = temp + person[x] + " ";
+      }
+      document.writeln(temp);
+    </script>
+
+    <script>
+      document.writeln("<h1>For OF Loop with Object/Array and using for loop just for exaple....</h1>");
+
+      var alphabets = ['A','E','I','O','U'];
+      for(x of alphabets){
+        document.writeln(x);
+      }
+
+      document.writeln("<br>");
+
+      for( let i=0; i<alphabets.length  ; i++){
+        document.writeln(alphabets[i]);
+      }
+    </script>
+
+    <script>
+        document.writeln("<h1>For OF Loop with String </h1>");
+
+        var s = 'AdityaPatel';
+        for(x of s){
+            document.writeln(x + "<br>");
+        }
+    </script>
+
+  </body>
+</html>

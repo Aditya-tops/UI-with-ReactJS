@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special JAVASCRIPT Operator</title>
+</head>
+<body>
+    <script>
+        var x = true;
+        var y = false;
+        /*
+        if(condition){
+            executes if condition is true
+        } else{
+            executes if condition is false
+
+        }
+        */
+        // Condition Operator
+
+        var z = x ? 2 : 4;
+        var z = y ? 2 : 4;
+        document.write("Value of Z :- " + z); document.write("<br>"); 
+        document.write("Value of Y :- " + y); document.write("<br>"); 
+
+        // Coma Operator
+        let a = (1,2,3,4);
+        document.write("Value of A :- " + a); document.write("<br>"); 
+
+    </script>
+    <script>
+        // Delete Operator
+        var person = {
+            firstname: 'aditya',
+            lastname: 'patel',
+            age:25,
+            eyecolor: 'brows'
+        };
+        delete person.lastname
+        document.write("Delete Lastname from the object :- " + person.lastname + person.firstname ); document.write("<br>"); 
+        
+        // In Operator
+        var p = 'age' in person ? true : false;
+        document.write("Value of P :- " + p); document.write("<br>"); 
+        document.write("If 'age' exits in object 'person' :- " + p); document.write("<br>"); 
+        // Instance of Operator
+        document.write("If person is a instance of Array object :- " + (person instanceof(Array))); 
+        document.write("<br>"); 
+        // New of Operator
+        class abc {
+
+        }
+        var j = new abc();
+        // typeof Operator
+        var x = 10;
+        document.write("Type of x is :- " + (typeof(x)) ); document.write("<br>");
+        // void Operator using for null perform
+        javascript:void func();
+    </script>
+
+</body>
+</html>
