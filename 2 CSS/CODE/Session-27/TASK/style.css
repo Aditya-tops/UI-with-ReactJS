@@ -1,0 +1,35 @@
+body{
+    background-color:  rgb(88, 88, 245);
+}
+h1{
+    color: rgb(246, 92, 92);
+}
+
+.bujji{
+    color: rgb(12, 227, 227);
+}
+#chitti{
+    color: yellow;
+}
+
+/*this is use for parent div(direct child seleter)*/
+
+div>a{/* a who is direct child of div*/
+    color: rgb(7, 207, 207);
+}
+
+/* descedant child*/
+div a {
+    color: aliceblue;
+}
+
+/* immediate sibliing this mean H1 ke bad ka element */
+h1+p{
+    color: pink;
+}
+
+/* Genereal sibiling */
+h1~p{
+    color: rgb(222, 69, 69);
+}
+

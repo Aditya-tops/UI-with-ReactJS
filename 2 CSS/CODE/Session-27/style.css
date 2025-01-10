@@ -1,0 +1,21 @@
+h1{
+    background-color: blue;
+    color: white;
+}
+h2{
+    background-color: yellow;
+    color: red;
+}
+p{
+    background-color: aquamarine;
+    color: blue;
+}
+h5{
+    background-color: rgb(25, 31, 13);
+    color: rgb(236, 231, 236);
+} 
+
+.para{
+    background-color: rgb(170, 255, 0);
+    color: rgb(0, 0, 0);
+}

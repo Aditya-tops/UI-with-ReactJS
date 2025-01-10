@@ -1,0 +1,15 @@
+body{
+    /*background: linear-gradient(rgb(227, 123, 123),rgb(112, 112, 236),rgb(140, 203, 140));*/
+    background: radial-gradient(orange,white,);
+    height: 100vh;
+}
+h1{
+    color: hsl(174, 93%, 61%);
+}
+h2{
+    color: rgba(208, 244, 91, 0.7);
+
+}
+p{
+    background: li;
+}
