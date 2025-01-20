@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function method call() </title>
+</head>
+<body>
+    <script>
+        function Emp(id,name){
+            this.id=id;
+            this.name=name;
+        }
+        function PeramanentEmp(id,name){
+            Emp.call(this,id,name);
+        }
+        document.writeln(new PeramanentEmp(100,"aditya").id);
+        document.writeln(new PeramanentEmp(100,"aditya").name);
+    </script>
+        <script>
+            function Emp(id,name){
+                this.id=id;
+                this.name=name;
+            }
+            function PeramanentEmp(id,name){
+                Emp.call(this,id,name);
+            }
+            function TemporaryEmp(id,name){
+                Emp.call(this,id,name);
+            }
+            var pEmp = new PeramanentEmp(1,"aditya patel");
+            var tEmp = new TemporaryEmp(2,"kunal joshi");
+            document.writeln(pEmp.id + " " + pEmp.name);
+            document.writeln(tEmp.id + " " + tEmp.name);
+        </script>
+</body>
+</html>
