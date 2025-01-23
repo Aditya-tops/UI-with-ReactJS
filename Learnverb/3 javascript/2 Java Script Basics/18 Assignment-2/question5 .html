@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><question-5></question-5></title>
+</head>
+<body>
+    <script>
+        // Step 1: Store two numeric values in variables x and y
+        let x = 5;
+        let y = 10;
+
+        // Step 2: Print addition of x and y
+        document.write("<p>Step 2: The addition of x and y is: " + (x + y) + "</p>");
+
+        // Step 3: Change x to numeric 2 and y to string "8"
+        x = 2;
+        y = "8";
+
+        // Check equality using "==" (type conversion allowed)
+        document.write("<p>Step 3a: x == y: " + (x == y) + "</p>");
+
+        // Check equality using "===" (strict equality, no type conversion)
+        document.write("<p>Step 3b: x === y: " + (x === y) + "</p>");
+
+        // Step 4: Print the type of x and y
+        document.write("<p>Step 4a: Type of x is: " + typeof x + "</p>");
+        document.write("<p>Step 4b: Type of y is: " + typeof y + "</p>");
+
+        // Step 5: If x or y are truthy, print "welcome aditya"
+        if (x || y) {
+            document.write("<p>Step 5: Welcome Aditya</p>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Apply() -1 </title>
+</head>
+<body>
+    <script>
+        var arr = [6,8,4,3];
+        var max = Math.max.apply(null,arr);
+        var min = Math.min.apply(this,arr);
+        document.write("<h1>this is for Array() </h1>")
+        document.writeln("Our Array is :- " + arr + "<br>")
+        document.write("this is maximum value :- " + max + "<br>");
+        document.write("this is minimum value :- " + min + "<br>"+ "<br>"+ "<hr>");
+    </script>
+<script>
+    var arr1 = [1,2,3,4,5];
+    var arr2 = [6,7,8,9,10];
+    Array.prototype.push.apply(arr1, arr2); 
+    document.write("<h1>EXAMPLE OF JOINING ARRAYS</h1>");
+    document.write("First Array is: [6, 8, 4, 3]<br>");
+    document.write("Second Array is: " + arr2 + "<br>");
+    document.write("Joint array is: " + arr1 + "<br>" + "<hr>"); 
+</script>
+<script>
+    document.write("<h1>EXAMPLE OF Bind() ARRAYS</h1>");
+    var website = {
+        name:"javascript",
+        getName:function(){
+            return this.name;
+        }
+    
+    }
+    var website2 = {
+        name:"python",
+        getName:function(){
+            return this.name;
+        }
+    
+    }
+
+    var unboundGetName = website.getName;
+    var boundGetName = unboundGetName.bind(website);
+    //var boundGetName = unboundGetName.bind(website2);
+    document.writeln(boundGetName());
+    
+</script>
+
+</body>
+</html>
