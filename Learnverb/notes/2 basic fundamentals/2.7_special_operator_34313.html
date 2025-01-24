@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Special Operator</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = true;
+		var y = false;
+
+		var person = {
+			firstname: "Joel",
+			lastname: "Christian",
+			age: 28,
+			eyecolor: "brown"
+		};
+
+		class abc{
+
+		}
+
+		document.write("<h3>Special Operator</h3>");
+		/*
+		if(condition){
+			executes if condition is true
+		} else {
+			executes if condition is false
+		}
+		*/
+		var z = y ? 2 : 4;
+		document.write("value of z: " + z);
+		document.write("<br>");
+
+		//  ',' operator
+		let a = (1,3,2);
+		document.write("value of a: " + a);
+		document.write("<br>");
+
+		//Delete Operator
+
+		delete person.lastname;
+		document.write("Deleted Lastname from the object: " + person.lastname);
+
+		//In Operator
+		var z = 'age' in person ? true : false;
+		document.write("<br>");
+		document.write("If 'age' exists in object 'person': " + z);
+
+		//'instance of' Operator
+		document.write("<br>");
+		document.write("If person is a instance of String object: " + (person instanceof String));
+
+		//'new' Operator
+		var b = new abc();
+
+		//typeof Operator
+		document.write("<br>");
+		document.write("Type of x is: " + (typeof x));
+		document.write("<br>");
+
+	</script>
+	<!-- void Operator -->
+	<a href="javascript:void(0)">Hello</a>
+
+</body>
+</html>
