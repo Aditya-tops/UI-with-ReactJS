@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <script>
+      // 3 Creating an object using method
+      document.write("<h2>Creating Method in Object</h2>");
+
+      function employee(id, name, salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+
+        this.updateSalary = function (newSalary) {
+          this.salary = newSalary;
+        };
+      }
+
+      var e = new employee(2, "Kunal Joshi", 50000);
+
+      document.writeln("Salary of " + e.name + " is: " + e.salary + "<br>");
+      e.updateSalary(90000);
+      document.writeln(
+        "Updated Salary of " + e.name + " is: " + e.salary + "<br>"
+      );
+
+    </script>
+  </body>
+</html>
