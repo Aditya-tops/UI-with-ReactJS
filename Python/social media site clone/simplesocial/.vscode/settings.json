@@ -1,0 +1,7 @@
+{
+  "emmet.extensionsPath": [""],
+  "emmet.showSuggestionsAsSnippets": true,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "editor.defaultFormatter": null,
+  "notebook.defaultFormatter": null
+}
