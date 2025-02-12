@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Elements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function SubmitClick() {
+            document.getElementById("detailsContainer").style.display = "block";
+            document.getElementById("registerContainer").style.display = "none";
+
+            document.getElementById("lblName").innerHTML = document.getElementById("productName").value;
+            document.getElementById("lblPrice").innerHTML = document.getElementById("productPrice").value;
+            document.getElementById("lblCity").innerHTML = document.getElementById("shippedTo").value;
+
+            let stock;
+            let stockCheckBox = document.getElementById("stockStatus");
+            if (stockCheckBox.checked) {
+                stock = "Available";
+            } else {
+                stock = "Out of Stock";
+            }
+            document.getElementById("lblStock").innerHTML = stock;
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <div class="mt-3" id="registerContainer">
+        <h2>
+            <button data-bs-target="#registerProduct" data-bs-toggle="modal" class="btn btn-primary">
+                Register New Product
+            </button>
+        </h2>
+    </div>
+
+    <div class="modal fade" id="registerProduct" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle" class="modal-title">Register New Product</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><label for="productName">Name</label></dt>
+                        <dd><input type="text" id="productName" class="form-control"></dd>
+
+                        <dt><label for="productPrice">Price</label></dt>
+                        <dd><input type="number" id="productPrice" class="form-control"></dd>
+
+                        <dt><label for="shippedTo">Shipped To</label></dt>
+                        <dd>
+                            <select class="form-select" id="shippedTo">
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Delhi">Delhi</option>
+                            </select>
+                        </dd>
+
+                        <dt><label for="stockStatus">Stock</label></dt>
+                        <dd class="form-switch">
+                            <input class="form-check-input" type="checkbox" id="stockStatus"> Available
+                        </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="SubmitClick()" data-bs-dismiss="modal">Submit</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsContainer" style="display: none;">
+        <h2>Product Details</h2>
+        <dl class="row">
+            <dt class="col-3">Name</dt>
+            <dd class="col-9" id="lblName"></dd>
+
+            <dt class="col-3">Price</dt>
+            <dd class="col-9" id="lblPrice"></dd>
+
+            <dt class="col-3">Shipped To</dt>
+            <dd class="col-9" id="lblCity"></dd>
+
+            <dt class="col-3">Stock</dt>
+            <dd class="col-9" id="lblStock"></dd>
+        </dl>
+        <button class="btn btn-info" data-bs-target="#registerProduct" data-bs-toggle="modal">Edit</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</
