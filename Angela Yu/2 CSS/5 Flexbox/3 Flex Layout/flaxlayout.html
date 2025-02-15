@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+  <style>
+    body {
+      font-size: 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      color: white;
+      border: 5px solid gold;
+      display: flex;
+      flex-wrap: wrap;
+      height: 80vh;
+      padding: 10px;
+      gap: 10px;
+      justify-content: flex-start; /* Default */
+      align-items: flex-start; /* Default */
+      align-content: flex-start; /* Default */
+    }
+
+    .container > * {
+      min-width: 150px;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .red { background-color: #eb4d4b; }
+    .orange { background-color: #f0932b; }
+    .yellow { background-color: #f6e58d; }
+    .green { background-color: #6ab04c; }
+    .blue { background-color: #4834d4; }
+    .indigo { background-color: #30336b; }
+    .purple { background-color: #be2edd; }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .controls div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+
+    select {
+      padding: 5px;
+      font-size: 1rem;
+    }
+
+    .reset-btn {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background-color: red;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .reset-btn:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+
+  <div class="controls">
+    <div>
+      <label for="justify-content">Justify Content:</label>
+      <select id="justify-content">
+        <option value="flex-start">Flex Start</option>
+        <option value="flex-end">Flex End</option>
+        <option value="center">Center</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+      </select>
+    </div>
+    <div>
+      <label for="flex-wrap">Flex Wrap:</label>
+      <select id="flex-wrap">
+        <option value="nowrap">No Wrap</option>
+        <option value="wrap">Wrap</option>
+        <option value="wrap-reverse">Wrap Reverse</option>
+      </select>
+    </div>
+    <div>
+      <label for="align-items">Align Items:</label>
+      <select id="align-items">
+        <option value="flex-start">Flex Start</option>
+        <option value="flex-end">Flex End</option>
+        <option value="center">Center</option>
+        <option value="baseline">Baseline</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+    <div>
+      <label for="align-content">Align Content:</label>
+      <select id="align-content">
+        <option value="flex-start">Flex Start</option>
+        <option value="flex-end">Flex End</option>
+        <option value="center">Center</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="reset-btn">Reset</button>
+
+  <script>
+    // Get the flex container
+    const flexContainer = document.querySelector('.container');
+    
+    // Get the dropdowns
+    const justifyContentDropdown = document.getElementById('justify-content');
+    const flexWrapDropdown = document.getElementById('flex-wrap');
+    const alignItemsDropdown = document.getElementById('align-items');
+    const alignContentDropdown = document.getElementById('align-content');
+    const resetButton = document.querySelector('.reset-btn');
+
+    // Default flexbox values
+    const defaultSettings = {
+      justifyContent: 'flex-start',
+      flexWrap: 'wrap',
+      alignItems: 'flex-start',
+      alignContent: 'flex-start'
+    };
+
+    // Add event listeners to update flex styles
+    justifyContentDropdown.addEventListener('change', (event) => {
+      flexContainer.style.justifyContent = event.target.value;
+    });
+
+    flexWrapDropdown.addEventListener('change', (event) => {
+      flexContainer.style.flexWrap = event.target.value;
+    });
+
+    alignItemsDropdown.addEventListener('change', (event) => {
+      flexContainer.style.alignItems = event.target.value;
+    });
+
+    alignContentDropdown.addEventListener('change', (event) => {
+      flexContainer.style.alignContent = event.target.value;
+    });
+
+    // Reset button functionality
+    resetButton.addEventListener('click', () => {
+      flexContainer.style.justifyContent = defaultSettings.justifyContent;
+      flexContainer.style.flexWrap = defaultSettings.flexWrap;
+      flexContainer.style.alignItems = defaultSettings.alignItems;
+      flexContainer.style.alignContent = defaultSettings.alignContent;
+
+      // Reset dropdown values
+      justifyContentDropdown.value = defaultSettings.justifyContent;
+      flexWrapDropdown.value = defaultSettings.flexWrap;
+      alignItemsDropdown.value = defaultSettings.alignItems;
+      alignContentDropdown.value = defaultSettings.alignContent;
+    });
+  </script>
+</body>
+
+</html>
