@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container div {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, libero.</p></div>
+        <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eius a vero provident sequi non.</p></div>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae ipsa quibusdam adipisci voluptate pariatur provident rerum?</p></div>
+    </div>
+</body>
+</html>
