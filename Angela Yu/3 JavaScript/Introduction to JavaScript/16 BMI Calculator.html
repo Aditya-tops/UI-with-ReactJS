@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <script>
+        function bmiCalc(weight, height){
+            var bmi = weight/ (height * height)
+            // return Math.floor(bmi)
+            return Math.round(bmi)
+        }
+        var bmi=bmiCalc(65, 1.8)
+        document.write(`BMI is ${bmi}`)
+    </script>
+</body>
+</html>

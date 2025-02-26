@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function lifeInWeeks(age) {
+            var yearRemainign = 90 - age;
+            var days = yearRemainign * 365;
+            var weeks = yearRemainign * 52;
+            var months = yearRemainign * 12;
+
+            document.write(`you have ${days} day, ${weeks} week and ${months} months left.`)
+        }
+        lifeInWeeks(12)
+    </script>
+        <script>
+            function getMilk(money) {
+                return money % 1.5;
+            }
+            var change = getMilk(3);
+            document.write(`Change is ${change} $`);
+        </script>
+</body>
+
+</html>
