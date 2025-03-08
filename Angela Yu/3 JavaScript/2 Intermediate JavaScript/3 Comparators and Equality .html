@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diff Between === or == </title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = "10";
+        document.writeln(`A = ${a} <br>`)
+        document.writeln(`B  = ${b} <br> <br>`)
+        document.writeln(`Type of A is ${typeof(a)} <br>`)
+        document.writeln(`Type of B is ${typeof(b)} <br> <br>`)
+
+        document.writeln(`This is For a === b <br>`)
+        if (a===b){
+            document.writeln(`yes <br>`)
+        }else{
+            document.writeln(`No <br><br>`)
+        }
+
+        document.writeln(`This is For a == b <br>`)
+        if (a==b){
+            document.writeln(`yes <br>`)
+        }else{
+            document.writeln(`No <br><br>`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calc</title>
+</head>
+<body>
+    <script>
+        prompt("What is your name ?")
+        prompt("What is their name ?")
+
+        var lovescore = Math.random() * 100;
+        lovescore = Math.floor(lovescore) + 1
+
+        if (lovescore > 70){
+            alert ("Your love score is " + lovescore + "%" + " You Love eachother like kanye loves kanye.")
+        }if (lovescore >30 && lovescore <= 70){
+            alert ("Your love score is " + lovescore + "%")
+        }if(lovescore<=30){
+            alert ("Your love score is " + lovescore + "%" + " you go together like oil and water")
+        }
+        
+
+        </script>
+</body>
+</html>

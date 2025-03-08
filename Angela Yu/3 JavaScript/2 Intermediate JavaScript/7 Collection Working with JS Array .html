@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var guestList = ["aditya", "bony", "kunal", "honey", "angela"];
+        document.writeln(`Array List is  :-  ${guestList} <br>`)
+        document.writeln(`Array length is  :-  ${guestList.length} <br> <br>`)
+        document.writeln(`Array posion 0 is :-  ${guestList[0]} <br>`)
+        document.writeln(`Array posion 2 is :-  ${guestList[2]} <br>`)
+        document.writeln(`Array posion 4 is :-  ${guestList[4]} <br>`)
+
+        document.writeln(`<br><br><hr><br><br>`)
+
+        var name = prompt("What is your name ?")
+        if (guestList.includes(name)){
+            alert(`welcome ${name}`)
+        }else{
+            alert(`Sorry ${name} , maybe next time`)
+        }
+
+    </script>
+</body>
+</html>
