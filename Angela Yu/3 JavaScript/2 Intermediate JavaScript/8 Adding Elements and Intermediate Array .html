@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    <script>
+        function fizzBuzz() {
+            var num = parseInt(prompt("Enter a number:")); 
+            if (isNaN(num)) {
+                console.log("Please enter a valid number!");
+                return;
+            }
+    
+            var output = [];
+    
+            for (var count = 1; count <= num; count++) {
+                if (count % 3 == 0 && count % 5 == 0) {
+                    output.push("FizzBuzz");
+                } else if (count % 3 == 0) {
+                    output.push("Fizz");
+                } else if (count % 5 == 0) {
+                    output.push("Buzz");
+                } else {
+                    output.push(count);
+                }
+            }
+    
+            console.log(output.join(", "));
+            document.writeln(`${output.join(", ")}`)
+        }
+    
+        fizzBuzz(); 
+    </script>
+    
+
+
+    <!-- <script>
+        var output = [];
+        var count = 1;
+        
+        function fizzBuzz() {
+            if (count % 3 == 0 && count % 5 == 0) {
+                output.push("FizzBuzz");
+            } else if (count % 3 == 0) {
+                output.push("Fizz");
+            } else if (count % 5 == 0) {
+                output.push("Buzz");
+            } else {
+                output.push(count);
+            }
+    
+            count++;
+            console.log(output);
+        }
+    </script> -->
+    
+</body>
+</html>

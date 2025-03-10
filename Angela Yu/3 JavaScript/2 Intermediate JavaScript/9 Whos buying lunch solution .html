@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buying Lunch</title>
+</head>
+<body>
+    <script>
+        function whoPaying(names) {
+            var numberOfPeople = names.length; 
+            var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+            var randomPerson = names[randomPersonPosition]; 
+    
+            return randomPerson + " is going to buy lunch today.";
+        }
+    
+        // Get names from user
+        var names = [];
+        for (var i = 0; i < 4; i++) {
+            var name = prompt("Enter name " + (i + 1) + ":");
+            if (name) {
+                names.push(name);
+            }
+        }
+    
+        // Display result
+        if (names.length > 0) {
+            alert(whoPaying(names));
+        } else {
+            alert("No names entered.");
+        }
+    </script>
+
+
+    <!-- <script>
+        function whoPaying(names) {
+            var numberOfPeople = names.length; // Fixed typo
+            var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+            var randomPerson = names[randomPersonPosition]; // Added 'var'
+    
+            return randomPerson + " is going to buy lunch today.";
+        }
+        console.log(whoPaying(["Aditya", "John", "Emma", "Sophia"]));
+    </script>     -->
+</body>
+</html>
