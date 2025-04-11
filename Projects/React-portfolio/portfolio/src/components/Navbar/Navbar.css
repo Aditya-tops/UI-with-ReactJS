@@ -8,18 +8,32 @@
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 60px;
-    font-size: 15px;
+    gap:60px;
+    font-size: 20px;
+    padding: 0px 20px;
+
 }
 .nav-connect{
-    padding: 10px 32px;
+    padding: 10px 25px;
     border-radius: 50px;
     background: linear-gradient(267deg,#1563c1 0.60%,#adbab5 100% );
     font-size: 20px;
     cursor: pointer;
     transition: all 0.4s;
+    margin-left: 40px;
 }
 .nav-connect:hover{
     transform:  scale(1.05);
 
+}
+.image{
+    position: relative;
+    margin-left: -75px
+}
+li{
+    width: 90px;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
 }

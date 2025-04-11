@@ -8,3 +8,9 @@ body{
   color: white;
   font-family: 'outfit';
 }
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  cursor: pointer;
+}
