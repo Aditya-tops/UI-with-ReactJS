@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+    font-family: 'Gilroy';
+}
+.nav{
+    /* background-color: yellow; */
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+.options{
+    display: flex;
+    gap: 50px;
+}
+.options h3 a{
+    text-decoration: none;
+    color: black;
+}
+.btn button{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+.myname span{
+    color: blueviolet;
+}
+.options span{
+    color: blueviolet;
+}
+.heroSection{
+    height: 500px;
+    width: 100%;
+    
+    display: flex;
+}
+.left{
+    height: 500px;
+    width: 50%;
+   
+}
+.right{
+    height: 500px;
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .myimage{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
