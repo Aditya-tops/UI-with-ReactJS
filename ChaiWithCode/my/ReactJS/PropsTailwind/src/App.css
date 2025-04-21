@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.card{
+  height: 50px;
+  width: 300px;
+}
+
