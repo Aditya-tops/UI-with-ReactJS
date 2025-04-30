@@ -1,0 +1,140 @@
+@media screen and (max-width:750px) {
+    
+    .nav .myname h1{
+        font-size: 25px;
+    }
+    .nav .options h3{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .nav button{
+        height: 30px;
+        width: 100px;
+    }
+    
+    .about-me{
+        height: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-h1 h1{
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .about-image-square{
+        height: 280px;
+        width: 350px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid black;
+        border-radius: 10px;
+    }
+    .para1 p{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .name-h3{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    
+
+    .skills{
+        height: 700px;
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+    .myskill-h1 h1{
+        font-size: 50px;
+        text-align: center;
+        
+    }
+    .skills-part{
+        display: flexbox;
+    }
+    
+    .skills-p1{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+    }
+    .skills-p1 img{
+        height: 100px;
+    }
+    .skills-p2 img{
+        height: 100px;
+    }
+    .html{
+        height: 150px;
+        width: 150px;
+        border: 4px solid black;
+        background-color: blueviolet;
+        text-align: center;
+        padding-top: 20px;
+        border-radius: 10px;
+        
+    }
+    .css{
+        height: 150px;
+        width: 150px;
+        border: 4px solid black;
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 10px;
+        padding-top: 20px;
+    }
+    .js{
+        height: 150px;
+        width: 150px;
+        border: 4px solid black;
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 10px;
+        padding-top: 20px;
+    }
+    .skills-p2{
+        height: 200px;
+        width: 100%;
+        padding-top: 150px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .bs{
+        height: 150px;
+        width: 150px;
+        border: 4px solid black;
+        background-color: blueviolet;
+        text-align: center;
+        padding-top: 20px;
+        border-radius: 10px;
+    }
+    .reactjs{
+        height: 150px;
+        width: 150px;
+        border: 4px solid black;
+        background-color: blueviolet;
+        text-align: center;
+        padding-top: 20px;
+        border-radius: 10px;
+    }
+    .nodejs{
+        height: 150px;
+        width: 150px;
+        border: 4px solid black;
+        background-color: blueviolet;
+        text-align: center;
+        padding-top: 20px;
+        border-radius: 10px;
+    }
+    
+}
+
+
