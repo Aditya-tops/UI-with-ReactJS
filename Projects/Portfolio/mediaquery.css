@@ -100,6 +100,10 @@
         border-radius: 10px;
         padding-top: 20px;
     }
+    .skills{
+        height: 500px;
+        width: 100%;
+    }
     .skills-p2{
         height: 200px;
         width: 100%;
@@ -134,7 +138,92 @@
         padding-top: 20px;
         border-radius: 10px;
     }
+
+
+
+
     
+
+.projects-h1 h1{
+    font-size: 50px;
+    text-align: center;
+}
+.projects-part{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.projects-part-1{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
 
+.projects-part-1 .portfolio{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.projects-part-1 .portfolio img{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.projects-part-1 .portfolio h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.projects-part-1 .portfolio p{
+    padding-top: 15px;
+    text-align: center;
+}
 
+.projects-part img{
+    height: 100px;
+    width: 250px;
+}
+
+.projects-part-2{
+    height: 500px;
+    width: 50%;
+  
+}
+.projects-part-2{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-part-2 .food{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.projects-part-2 .food img{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.projects-part-2 .food h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.projects-part-2 .food p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* Contact Container */
+
+.contact{
+    margin: auto;
+}
+
+}
